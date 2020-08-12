@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>sudoku</title>
+</head>
+<body>
+    <h1>SUDOKU</h1>
+
+    <div class="container"  onclick="change(event)">
+        
+        <div id = c1 class = " t l one cell" tabindex="0"></div>
+        <div id = c2 class = " t one cell" tabindex="0"></div>
+        <div id = c3 class = " t r one cell" tabindex="0"></div>
+
+        <div id = c4 class = " t two cell" tabindex="0"></div>
+        <div id = c5 class = " t two cell" tabindex="0"></div>
+        <div id = c6 class = " t r two cell" tabindex="0"></div>
+
+        <div id = c7 class = " t three cell" tabindex="0"></div>
+        <div id = c8  class = " t three cell" tabindex="0"></div>
+        <div id = c9 class = " t r three cell" tabindex="0"></div>
+
+        <div id = c10 class = " l one cell " tabindex="0"></div>
+        <div id = c11 class = " one cell " tabindex="0"></div>
+        <div id = c12 class = " r one cell " tabindex="0"></div>
+
+        <div id = c13 class = "two cell" tabindex="0"> </div>
+        <div id = c14 class = "two cell" tabindex="0"></div>
+        <div id = c15 class = "r two cell" tabindex="0"></div>
+         
+        <div id = c16 class = "three cell" tabindex="0"></div>
+        <div id = c17 class = "three cell" tabindex="0"></div>
+        <div id = c18 class = "r three cell" tabindex="0"></div>
+
+        <div id = c19 class = " l one cell" tabindex="0"></div>
+        <div id = c20 class = " one cell" tabindex="0"></div>
+        <div id = c21 class = " r one cell " tabindex="0"></div>
+
+        <div id = c22 class = "two cell" tabindex="0"></div>
+        <div id = c23 class = "two cell" tabindex="0"></div>
+        <div id = c24 class = "r two cell" tabindex="0"></div>
+
+        <div id = c25 class = "three cell" tabindex="0"></div>
+        <div id = c26 class = "three cell" tabindex="0"></div>
+        <div id = c27 class = "r three cell" tabindex="0"></div>
+
+        <div id = c28 class = " l four cell" tabindex="0"></div>
+        <div id = c29 class = " four cell" tabindex="0"></div>
+        <div id = c30 class = " r four cell" tabindex="0"></div>
+
+        <div id = c31 class = "five cell" tabindex="0"></div>
+        <div id = c32 class = "five cell" tabindex="0"></div>
+        <div id = c33 class = "r five cell" tabindex="0"></div>
+
+        <div id = c34 class = "six cell" tabindex="0"></div>
+        <div id = c35 class = "six cell" tabindex="0"></div>
+        <div id = c36 class = "r six cell" tabindex="0"></div>
+
+        <div id = c37 class = "l four cell" tabindex="0"></div>
+        <div id = c38 class = " four cell" tabindex="0"></div>
+        <div id = c39 class = "r four cell" tabindex="0"></div>
+
+        <div id = c40 class = "five cell" tabindex="0"></div>
+        <div id = c41 class = "five cell" tabindex="0"></div>
+        <div id = c42 class = "r five cell" tabindex="0"></div>
+
+        <div id = c43 class = "six cell" tabindex="0"></div>
+        <div id = c44 class = "six cell" tabindex="0"></div>
+        <div id = c45 class = "r six cell" tabindex="0"></div>
+
+        <div id = c46 class = "l four cell" tabindex="0"></div>
+        <div id = c47 class = "four cell" tabindex="0"></div>
+        <div id = c48 class = "r four cell" tabindex="0"></div>
+
+        <div id = c49 class = "five cell" tabindex="0"></div>
+        <div id = c50 class = "five cell" tabindex="0"></div>
+        <div id = c51 class = "r five cell" tabindex="0"></div>
+
+        <div id = c52 class = "six cell" tabindex="0"></div>
+        <div id = c53 class = "six cell" tabindex="0"></div>
+        <div id = c54 class = "r six cell" tabindex="0"></div>
+
+        <div id = c55 class = "l seven cell" tabindex="0"></div>
+        <div id = c56 class = "seven cell" tabindex="0"></div>
+        <div id = c57 class = "r seven cell" tabindex="0"></div>
+        
+        <div id = c58 class = "eight cell" tabindex="0"></div>
+        <div id = c59 class = "eight cell" tabindex="0"></div> 
+        <div id = c60 class = "r eight cell" tabindex="0"></div>
+
+        <div id = c61 class = "nine cell" tabindex="0"></div>
+        <div id = c62 class = "nine cell" tabindex="0"></div>
+        <div id = c63 class = "r nine cell" tabindex="0"></div>
+
+        <div id = c64 class = "l seven cell" tabindex="0"></div>
+        <div id = c65 class = "seven cell" tabindex="0"></div>
+        <div id = c66 class = "r seven cell" tabindex="0"></div>
+
+        <div id = c67 class = "eight cell" tabindex="0"></div>
+        <div id = c68 class = "eight cell" tabindex="0"></div>
+        <div id = c69 class = "r eight cell" tabindex="0"></div>
+
+        <div id = c70 class = "nine cell" tabindex="0"></div>
+        <div id = c71 class = "nine cell" tabindex="0"></div>
+        <div id = c72 class = "r nine cell" tabindex="0"></div>
+
+        <div id = c73 class = "b l seven cell" tabindex="0"></div>
+        <div id = c74 class = "b seven cell" tabindex="0"></div>
+        <div id = c75 class = "b r seven cell" tabindex="0"></div>
+
+        <div id = c76 class = "b eight cell" tabindex="0"></div>
+        <div id = c77 class = "b eight cell" tabindex="0"></div>
+        <div id = c78 class = "b r eight cell" tabindex="0"></div>
+
+        <div id = c79 class = "b nine cell" tabindex="0"></div>
+        <div id = c80 class = "b nine cell" tabindex="0"></div>
+        <div id = c81 class = "b r nine cell" tabindex="0"></div>
+    
+    </div>
+    <div class="buttonClass">
+            <button class = 'hvr-glow hvr-fade button solve'> Solve </button>
+            <button class = 'hvr-glow hvr-fade button check'> Check Solution </button>
+            <button class = 'hvr-glow hvr-fade button newGame'> New Game </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
